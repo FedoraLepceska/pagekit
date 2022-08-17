@@ -2,7 +2,8 @@
   "name": "pagekit",
   "scripts": {
     "install": "bower install && webpack && gulp",
-    "test:int:open": "npx start-server-and-test \"./pagekit start\" http://localhost:8080 \"cy:open\""
+    "test": "npx cypress open",
+    "start": "./pagekit start"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",
