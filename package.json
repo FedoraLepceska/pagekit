@@ -1,7 +1,8 @@
 {
   "name": "pagekit",
   "scripts": {
-    "install": "bower install && webpack && gulp"
+    "install": "bower install && webpack && gulp",
+    "test:int:open": "npx start-server-and-test \"./pagekit start\" http://localhost:8080 \"cy:open\""
   },
   "devDependencies": {
     "babel-core": "^6.1.2",
@@ -12,6 +13,7 @@
     "bower": "^1.7.6",
     "cldr-core": "28.0.0",
     "cldr-localenames-modern": "28.0.0",
+    "cypress": "^10.6.0",
     "glob": "^5.0.5",
     "gulp": "^3.9.0",
     "gulp-eslint": "^0.7.0",
@@ -29,5 +31,8 @@
     "vue-loader": "^8.2.0",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.9"
+  },
+  "dependencies": {
+    "start-server-and-test": "^1.14.0"
   }
 }
